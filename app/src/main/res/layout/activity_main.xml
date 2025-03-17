@@ -12,34 +12,40 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:textSize="30sp"
         android:text="Konfigurator samochodu"
         android:gravity="center"
+        android:background="@color/purple"
+        android:textColor="@color/white"
         />
 
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         >
         <RadioButton
             android:id="@+id/sedan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sedan"
+            android:buttonTint="@color/purple"
             />
         <RadioButton
             android:id="@+id/suv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Suv"
+            android:text="SUV"
+            android:buttonTint="@color/purple"
             />
         <RadioButton
             android:id="@+id/hatchback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hatchback"
+            android:buttonTint="@color/purple"
             />
     </RadioGroup>
 
@@ -49,30 +55,59 @@
         android:background="@color/black"
         android:layout_margin="10dp"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
 
-    <CheckBox
-        android:id="@+id/klima"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Klimatyzacja"
-        />
-    <CheckBox
-        android:id="@+id/siedzenia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skórzane siedzenia"
-        />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/klima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Klimatyzacja" />
+
+            <CheckBox
+                android:id="@+id/siedzenia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skórzane siedzenia" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/zdjecie"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
     <Button
+        android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Złóż zamówienie"
+        android:layout_marginLeft="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_margin="10dp"
         />
 
     <TextView
         android:id="@+id/zamowienie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
         />
-
 
 </LinearLayout>
