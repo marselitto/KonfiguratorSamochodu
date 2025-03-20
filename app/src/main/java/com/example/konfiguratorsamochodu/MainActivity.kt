@@ -54,46 +54,55 @@ class MainActivity : AppCompatActivity() {
             if(klimatyzacja.isChecked && skorzanesiedzenia.isChecked){
                 if (autosedan.isChecked){
                     wynik.setText("Twoja konfiguracja: Sedan +klimatyzacja +skórzane siedzenia")
-                    wynik.setBackgroundColor(Color.YELLOW)
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
                 else if(autosuv.isChecked){
                     wynik.setText("Twoja konfiguracja: SUV +klimatyzacja +skórzane siedzenia")
-                    wynik.setBackgroundColor(Color.YELLOW)
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
                 else if (autohatchback.isChecked){
                     wynik.setText("Twoja konfiguracja: Hatchback +klimatyzacja +skórzane siedzenia")
-                    wynik.setBackgroundColor(Color.YELLOW)
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
             }
             if(klimatyzacja.isChecked && !skorzanesiedzenia.isChecked)
                 if (autosedan.isChecked){
                     wynik.setText("Twoja konfiguracja: Sedan +klimatyzacja")
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
                 else if(autosuv.isChecked){
                     wynik.setText("Twoja konfiguracja: SUV +klimatyzacja")
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
                 else if (autohatchback.isChecked){
                     wynik.setText("Twoja konfiguracja: Hatchback +klimatyzacja")
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
             if(!klimatyzacja.isChecked && skorzanesiedzenia.isChecked)
                 if (autosedan.isChecked){
                     wynik.setText("Twoja konfiguracja: Sedan +skórzane siedzenia")
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
                 else if(autosuv.isChecked){
                     wynik.setText("Twoja konfiguracja: SUV +skórzane siedzenia")
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
                 else if (autohatchback.isChecked){
                     wynik.setText("Twoja konfiguracja: Hatchback +skórzane siedzenia")
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
             if(!klimatyzacja.isChecked && !skorzanesiedzenia.isChecked)
                 if (autosedan.isChecked){
                     wynik.setText("Twoja konfiguracja: Sedan")
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
                 else if(autosuv.isChecked){
                     wynik.setText("Twoja konfiguracja: SUV")
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
                 else if (autohatchback.isChecked){
                     wynik.setText("Twoja konfiguracja: Hatchback")
+                    wynik.setBackgroundColor(Color.GREEN)
                 }
         }
 
